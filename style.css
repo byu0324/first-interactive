@@ -1,5 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  color: white;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background: linear-gradient(hsl(213, 19%, 18%), hsl(216, 13%, 12%));
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.star{
+  width: 40px;
+  height: 40px;
+  padding: 12px;
+  margin: 5px 0 20px 0;
+  border-radius: 50%;
+  background-color: hsl(218, 19%, 22%);
+}
+
+.thanks {
+  display: none;
+}
+
+h1 {
+  margin: 15px 0;
+}
+
+p {
+  color: hsl(217, 12%, 63%);
+  margin: 15px 0;
+}
+
+.nums {
+  margin: 20px 0;
+}
+
+.num {
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(218, 19%, 22%);
+  width: 50px;
+  height: 50px;
+  margin-right: 9px;
+  border-radius: 50%;
+  border: none;
+  font-family: inherit;
+}
+
+.num:focus {
+  background-color: hsl(217, 12%, 63%);
+  color: white;
+}
+
+.num:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.submit {
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  color: hsl(25, 97%, 53%);
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+
+.submit:active {
+  background-color: hsl(25, 97%, 53%);
+  color: white;
+}
+
+.submit:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 381px) {
+  .main {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+@media (max-width: 380px) {
+  
 }
