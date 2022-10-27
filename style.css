@@ -32,10 +32,6 @@ body {
   background-color: hsl(218, 19%, 22%);
 }
 
-.thanks {
-  display: none;
-}
-
 h1 {
   margin: 15px 0;
 }
@@ -49,23 +45,29 @@ p {
   margin: 20px 0;
 }
 
-.num {
-  color: hsl(216, 12%, 54%);
-  background-color: hsl(218, 19%, 22%);
-  width: 50px;
-  height: 50px;
-  margin-right: 9px;
-  border-radius: 50%;
-  border: none;
-  font-family: inherit;
+.nums input[type=radio] {
+  display: none;
 }
 
-.num:focus {
+.nums input[type=radio]+label {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 8px;
+  text-align: center;
+  line-height: 50px;
+  background-color: hsl(218, 19%, 22%);
+  border-radius: 25px;
+  cursor: pointer;
+  color: hsl(216, 12%, 54%);
+}
+
+.nums input[type=radio]:checked+label {
   background-color: hsl(217, 12%, 63%);
   color: white;
 }
 
-.num:hover {
+.nums input[type=radio]:hover+label {
   cursor: pointer;
   background-color: hsl(25, 97%, 53%);
   color: white;
@@ -87,6 +89,30 @@ p {
 
 .submit:hover {
   cursor: pointer;
+}
+
+.thanks {
+  display: none;
+  text-align: center;
+  padding: 13px;
+}
+
+.thanks h2 {
+  color: hsl(25, 97%, 53%);
+  display: inline-block;
+  font-size: 13px;
+  margin: 20px 0 10px 0;
+  background-color: hsl(218, 19%, 22%);
+  padding: 6px 15px;
+  border-radius: 15px;
+}
+
+.thanks h1 {
+  display: 
+}
+
+.thanks_img {
+  
 }
 
 @media (min-width: 381px) {

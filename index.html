@@ -12,6 +12,7 @@
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <link rel="stylesheet" href="style.css">
+  <script src="main.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,11 @@
         to help us improve our offering!</p>
 
       <form class="nums" action="">
-        <input class="num" type="button" value="1">
-        <input class="num" type="button" value="2">
-        <input class="num" type="button" value="3">
-        <input class="num" type="button" value="4">
-        <input class="num" type="button" value="5">
+        <input class="num" name="score" type="radio" id="num1" onclick="document.getElementById('grade').value='1'"><label for="num1">1</label>
+        <input class="num" name="score" type="radio" id="num2" onclick="document.getElementById('grade').value='2'"><label for="num2">2</label>
+        <input class="num" name="score" type="radio" id="num3" onclick="document.getElementById('grade').value='3'"><label for="num3">3</label>
+        <input class="num" name="score" type="radio" id="num4" onclick="document.getElementById('grade').value='4'"><label for="num4">4</label>
+        <input class="num" name="score" type="radio" id="num5" onclick="document.getElementById('grade').value='5'"><label for="num5">5</label>
       </form>
       
       <input class="submit" type="button" value="SUBMIT" onclick="change()">
@@ -44,7 +45,10 @@
     <!-- Thank you state start -->
 
     <section class="thanks">
-      You selected <span id="grade"></span> out of 5
+      <img class="thanks_img" src="images/illustration-thank-you.svg" alt="">
+      <h2>
+        You selected <span id="grade"></span> out of 5
+      </h2>
 
       <h1>Thank you!</h1>
 
